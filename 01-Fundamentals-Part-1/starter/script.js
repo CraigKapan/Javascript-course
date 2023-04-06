@@ -98,7 +98,7 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now -1991 > now - 2018);
-*/
+
 ////////////////////////////////////
 // Operator Precedence
 
@@ -114,3 +114,54 @@ console.log(x, y);
 
 const avgAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, avgAge);
+*/
+
+////////////////////////////////////
+// Coding Challenge #1
+
+console.log("Mark 1 Height and Weight");
+const markHeight1 = 1.69;
+const markWeight1 = 92;
+console.log(markHeight1, markWeight1);
+
+console.log(" ");
+
+console.log("John 1 Height and Weight");
+const johnHeight1 = 1.95;
+const johnWeight1 = 92;
+console.log(johnHeight1, johnWeight1);
+
+console.log(" ");
+
+console.log("Mark 2 Height and Weight");
+const markHeight2 = 1.88;
+const markWeight2 = 95;
+console.log(markHeight2, markWeight2);
+
+console.log(" ");
+
+console.log("John 2 Height and Weight");
+const johnHeight2 = 1.76;
+const johnWeight2 = 85;
+console.log(johnHeight2, johnWeight2);
+
+console.log(" ");
+
+console.log("Mark 1 and 2 BMI");
+const markBMI1 = markWeight1 / markHeight1 ** 2
+const markBMI2 = markWeight2 / (markHeight2 * markHeight2)
+console.log(markBMI1, markBMI2);
+
+console.log(" ");
+
+console.log("John 1 and 2 BMI");
+const johnBMI1 = johnWeight1 / johnHeight1 ** 2
+const johnBMI2 = johnWeight2 / (johnHeight2 * johnHeight2)
+console.log(johnBMI1, johnBMI2);
+
+console.log(" ");
+
+console.log("markHigherBMI 1 and 2");
+const markHigherBMI1 = markBMI1 > johnBMI1;
+const markHigherBMI2 = markBMI2 > johnBMI2;
+console.log(markHigherBMI1, markHigherBMI2);
