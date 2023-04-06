@@ -25,3 +25,20 @@ console.log(typeof language);
 */
 
 language = "english";
+
+/* ************************** 
+Basic operators
+************************** */
+
+const halfPopulation = population / 2;
+const finlandPopulation = 6;
+const avgPopulation = 30;
+population++;
+console.log(population);
+
+console.log(population > finlandPopulation);
+console.log(population < avgPopulation);
+
+// const description = `${country} is in ${continent} and its ${population} million people speak ${language}`
+const description = country + " is " + "in " + continent + " and " + "its " + population + " million " + "people " + "speak " + language;
+console.log(description);
