@@ -232,7 +232,7 @@ if (markBMI1 > johnBMI1) {
 } else {
     console.log(`Johns BMI (${johnBMI1}) is higher than Marks BMI (${markBMI1})`);
 }
-*/
+
 ////////////////////////////////////
 // Type Conversion and Coercion
 
@@ -254,3 +254,29 @@ console.log("23" / "2");
 let n = "1" + 1; // "11"
 n -= 1; // 11 - 1 = 10
 console.log(n);
+*/
+////////////////////////////////////
+// Truthy and Falsy Values
+
+// 5 falsy values: 0, "", undifined, null, Nan
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0;
+
+if (money) {
+    console.log("Don't spend it all 👍");
+} else {
+    console.log("Get a job rn!! ⚒");
+}
+
+let height = 0;
+if (height) {
+    console.log("Yay!! 😊 defined");
+} else {
+    console.log("Ney! 😒 UNDEFINED");
+}
