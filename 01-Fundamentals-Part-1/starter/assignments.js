@@ -2,7 +2,6 @@
 Values and Variables
 ************************** */
 
-
 let country = "South Africa";
 let continent = "Africa";
 let population = 59.39;
@@ -12,7 +11,6 @@ console.log(country);
 console.log(continent);
 console.log(population);
 */
-
 
 let isIsland = false;
 let language;
@@ -40,14 +38,25 @@ population++;
 // console.log(population < avgPopulation);
 
 // const description = `${country} is in ${continent} and its ${population} million people speak ${language}`
-const description = country + " is " + "in " + continent + " and " + "its " + population + " million " + "people " + "speak " + language;
+const description =
+  country +
+  " is " +
+  "in " +
+  continent +
+  " and " +
+  "its " +
+  population +
+  " million " +
+  "people " +
+  "speak " +
+  language;
 // console.log(description);
 
 /* ************************** 
 Strings and Template Literals
 ************************** */
 
-const description2 = `${country} is in ${continent} and its ${population} million people speak ${language}`
+const description2 = `${country} is in ${continent} and its ${population} million people speak ${language}`;
 // console.log(description2);
 
 /* ************************** 
@@ -55,7 +64,17 @@ Taking Decisions: if / else Statements
 ************************** */
 
 if (population > 33) {
-    // console.log(`${country}'s population is above average`);
+  // console.log(`${country}'s population is above average`);
 } else {
-    // console.log(`${country}'s population is ${33 - population} million below average`);
+  // console.log(`${country}'s population is ${33 - population} million below average`);
 }
+
+/* ************************** 
+Type Conversion and Coercion
+************************** */
+
+console.log("9" - "5");
+console.log("19" - "13" + "17");
+console.log("19" - "13" + 17);
+console.log("123" < 57);
+console.log(5 + 6 + "4" + 9 - 4 - 2);
