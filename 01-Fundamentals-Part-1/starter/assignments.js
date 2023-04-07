@@ -42,3 +42,10 @@ population++;
 // const description = `${country} is in ${continent} and its ${population} million people speak ${language}`
 const description = country + " is " + "in " + continent + " and " + "its " + population + " million " + "people " + "speak " + language;
 // console.log(description);
+
+/* ************************** 
+Strings and Template Literals
+************************** */
+
+const description2 = `${country} is in ${continent} and its ${population} million people speak ${language}`
+console.log(description2);

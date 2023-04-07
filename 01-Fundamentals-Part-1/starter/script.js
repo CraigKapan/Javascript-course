@@ -114,7 +114,6 @@ console.log(x, y);
 
 const avgAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, avgAge);
-*/
 
 ////////////////////////////////////
 // Coding Challenge #1
@@ -165,3 +164,28 @@ console.log("markHigherBMI 1 and 2");
 const markHigherBMI1 = markBMI1 > johnBMI1;
 const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI1, markHigherBMI2);
+*/
+////////////////////////////////////
+// Strings and Template Literals
+
+const firstName = "Jonas";
+const job = "Teacher";
+const birthYear = "1991";
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + ".";
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}.`;
+console.log(jonasNew);
+
+console.log(`A regular string...`);
+
+console.log("String with \n\
+multiple \n\
+lines");
+
+console.log(`String with
+multiple
+lines`);
