@@ -254,7 +254,7 @@ console.log("23" / "2");
 let n = "1" + 1; // "11"
 n -= 1; // 11 - 1 = 10
 console.log(n);
-*/
+
 ////////////////////////////////////
 // Truthy and Falsy Values
 
@@ -280,3 +280,22 @@ if (height) {
 } else {
     console.log("Ney! 😒 UNDEFINED");
 }
+*/
+////////////////////////////////////
+//  Equality Operators: == vs. ===
+
+const age = "18";
+if (age === 18) console.log("You just became an adult (strict)");
+
+if (age == 18) console.log("You just became an adult (loose)");
+
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) console.log("Cool bro 23 is cool");
+ else if (favourite === 7) console.log("7 is also cool");
+ else if (favourite === 10) console.log("10 is a GOATED number"); 
+ else console.log(`${favourite} is Lame, it's not 7, 23 or the best number 10`);
+
+if (favourite !== 23) console.log("Number is not 23, WHY?");
