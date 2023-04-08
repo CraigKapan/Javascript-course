@@ -280,7 +280,7 @@ if (height) {
 } else {
     console.log("Ney! 😒 UNDEFINED");
 }
-*/
+
 ////////////////////////////////////
 //  Equality Operators: == vs. ===
 
@@ -293,9 +293,29 @@ const favourite = Number(prompt("What is your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
-if (favourite === 23) console.log("Cool bro 23 is cool");
+if (favourite === 23) console.log("23 is cool");
  else if (favourite === 7) console.log("7 is also cool");
- else if (favourite === 10) console.log("10 is a GOATED number"); 
- else console.log(`${favourite} is Lame, it's not 7, 23 or the best number 10`);
+ else if (favourite === 10) console.log("10 is the best number"); 
+ else console.log(`${favourite} is not 7, 23 or the best number 10`);
+ 
+ if (favourite !== 23) console.log("Number is not 23, WHY?");
+ */
+////////////////////////////////////
+//  Logical Operators
 
-if (favourite !== 23) console.log("Number is not 23, WHY?");
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) console.log("Sarah can start Driving");
+//  else console.log("You can't drive");
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) console.log("Sarah can start Driving");
+ else console.log("You can't drive");
+
