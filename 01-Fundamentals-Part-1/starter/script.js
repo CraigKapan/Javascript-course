@@ -299,7 +299,7 @@ if (favourite === 23) console.log("23 is cool");
  else console.log(`${favourite} is not 7, 23 or the best number 10`);
  
  if (favourite !== 23) console.log("Number is not 23, WHY?");
- */
+
 ////////////////////////////////////
 //  Logical Operators
 
@@ -317,5 +317,43 @@ const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
 if (hasDriversLicense && hasGoodVision && !isTired) console.log("Sarah can start Driving");
- else console.log("You can't drive");
+else console.log("You can't drive");
+*/
+////////////////////////////////////
+//  Coding Challenge #3
 
+// Test Data
+// const dolphinsTotalScore = 96 + 108 + 89;
+// const koalasTotalScore = 88 + 91 + 110;
+
+// Coding Challenge
+// if (dolphinsAverageScore > koalasAverageScore) {
+    //     console.log("The dolphins win!! 🐬");
+    // } else if (koalasAverageScore > dolphinsAverageScore) {
+        //     console.log("The koalas win!! 🐨");
+        // } else if (dolphinsAverageScore === koalasAverageScore) {
+            //     console.log("both win");
+            // }
+            
+// Bonus 1 Data
+const dolphinsTotalScore = 97 + 112 + 101;
+const koalasTotalScore = 109 + 95 + 123;
+
+// const dolphinsTotalScore = 97 + 112 + 101;
+// const koalasTotalScore = 109 + 95 + 106;
+
+const dolphinsAverageScore = dolphinsTotalScore / 3;
+const koalasAverageScore = koalasTotalScore / 3
+
+// Bonus 1, and 2 code
+if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
+    console.log("The dolphins win!! 🐬");
+} else if (koalasAverageScore > dolphinsAverageScore && koalasAverageScore >= 100) {
+    console.log("The koalas win!! 🐨");
+} else if (koalasAverageScore === dolphinsAverageScore && koalasAverageScore >= 100 && dolphinsAverageScore >= 100) {
+    console.log("Its a draw 😐");
+} else if (koalasAverageScore < 100 && dolphinsAverageScore < 100) {
+    console.log("no one wins ❌");
+} else {
+    console.log("Error");
+}

@@ -95,7 +95,7 @@ Type Conversion and Coercion
  Logical Operators
 ************************** */
 
-if (language === "english" && population < 50 && !isIsland) 
-  console.log(`you should live in ${country} :)`);
-    else 
-      console.log(`${country} does not meet your criteria :(`);
+// if (language === "english" && population < 50 && !isIsland) 
+//   console.log(`you should live in ${country} :)`);
+//     else 
+//       console.log(`${country} does not meet your criteria :(`);
