@@ -131,5 +131,7 @@ switch (language) {
 }
           
 /* ************************** 
-  Statements and Expressions
+  The Conditional (Ternary) Operator
 ************************** */
+
+console.log(population > 33 ? console.log(`${country}'s population of ${population} is above average`) : console.log(`${country}'s population of ${population} is below average`));
