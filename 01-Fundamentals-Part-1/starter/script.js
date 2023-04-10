@@ -357,50 +357,64 @@ if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
 } else {
     console.log("Error");
 }
-*/
+
 ////////////////////////////////////
 //  The switch Statement
 
 const day = "monday";
 
 switch (day) {
-  case "monday": // day === "monday"
+    case "monday": // day === "monday"
     console.log("Plan course structure");
     console.log("Go to coding meetup");
     break;
-
-  case "tuesday":
-    console.log("Prepare theoy videos");
+    
+    case "tuesday":
+        console.log("Prepare theoy videos");
     break;
 
   case "wednesday":
   case "thursday":
     console.log("Write code examples");
     break;
-
-  case "friday":
-    console.log("Record videos");
-    break;
-
-  case "saterday":
-  case "sunday":
-    console.log("Enjoy the weekend");
-    break;
-  default:
-    console.log("Not a valid day");
-}
+    
+    case "friday":
+        console.log("Record videos");
+        break;
+        
+        case "saterday":
+            case "sunday":
+                console.log("Enjoy the weekend");
+                break;
+                default:
+                    console.log("Not a valid day");
+                }
 
 if (day === "monday") {
   console.log("Plan course structure");
   console.log("Go to coding meetup");
 } else if (day === "tuesday") {
-  console.log("Prepare theoy videos");
+    console.log("Prepare theoy videos");
 } else if (day === "wednesday" || day === "thursday") {
-  console.log("Write code examples");
+    console.log("Write code examples");
 } else if (day === "friday") {
-  console.log("Record videos");
+    console.log("Record videos");
 } else if (day === "saturday" || day === "sunday") {
-  console.log("Enjoy the weekend");
+    console.log("Enjoy the weekend");
 } else {
-  console.log("Not a valid day");
+    console.log("Not a valid day");
 }
+*/
+////////////////////////////////////
+//  Statements and Expressions
+
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = "23 is bigger";
+}
+
+const me = "Jonas"
+console.log(`I'm ${2037 - 1991} years old ${me}`);
