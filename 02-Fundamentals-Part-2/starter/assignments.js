@@ -157,28 +157,33 @@ const decriptionofSA = describeCountry("South Africa", 59, "Cape Town");
 const worldPopulation = 7900;
 
 function percentageOfWorld1(population) {
-  return `${country} has a population of ${population}, so its about ${
-    (population / 7900) * 100
-  }% of the world`;
+  return 7900 / population;
 }
 
 // console.log(percentageOfWorld1(59));
 
 const percentageOfWorld2 = function (population) {
-  return `${country} has a population of ${population}, so its about ${
-    (population / 7900) * 100
-  }% of the world`;
+  return 7900 / population;
 };
 
 // console.log(percentageOfWorld2(59));
 
 /* ************************** 
-35. Arrow Functions
+ Arrow Functions
 ************************** */
 
-const percentageOfWorld3 = (population) =>
-  `${country} has a population of ${population}, so its about ${
-    (population / 7900) * 100
-  }% of the world`;
+const percentageOfWorld3 = (population) => 7900 / population;
 
-console.log(percentageOfWorld3(1723));
+// console.log(percentageOfWorld3(1723));
+
+/* ************************** 
+ Functions Calling Other Functions
+************************** */
+
+const describePopulation = function (country, population) {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world`;
+};
+
+console.log(describePopulation("South Africa", 1923));
