@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /* ************************** 
 Values and Variables
@@ -144,8 +144,30 @@ switch (language) {
 
 function describeCountry(country, population, capitalCity) {
   const description = `${country} has ${population} million people and its capital city is ${capitalCity}`;
-  return description
+  return description;
 }
 
 const decriptionofSA = describeCountry("South Africa", 59, "Cape Town");
-console.log(decriptionofSA);
+// console.log(decriptionofSA);
+
+/* ************************** 
+  Function Declarations vs. Expressions
+************************** */
+
+const worldPopulation = 7900;
+
+function percentageOfWorld1(population) {
+  return `${country} has a population of ${population}, so its about ${
+    (population / 7900) * 100
+  }% of the world`;
+}
+
+console.log(percentageOfWorld1(59));
+
+const percentageOfWorld2 = function (population) {
+  return `${country} has a population of ${population}, so its about ${
+    (population / 7900) * 100
+  }% of the world`;
+}
+
+console.log(percentageOfWorld2(59));
