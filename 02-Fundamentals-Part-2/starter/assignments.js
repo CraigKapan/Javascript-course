@@ -183,7 +183,11 @@ const percentageOfWorld3 = (population) => 7900 / population;
 const describePopulation = function (country, population) {
   return `${country} has ${population} million people, which is about ${percentageOfWorld1(
     population
-  )}% of the world`;
-};
-
-console.log(describePopulation("South Africa", 1923));
+    )}% of the world`;
+  };
+  
+  // console.log(describePopulation("South Africa", 1923));
+  
+/* ************************** 
+  Reviewing Functions
+************************** */
