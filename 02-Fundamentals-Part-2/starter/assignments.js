@@ -157,7 +157,7 @@ const decriptionofSA = describeCountry("South Africa", 59, "Cape Town");
 const worldPopulation = 7900;
 
 function percentageOfWorld1(population) {
-  return 7900 / population;
+  return population / 7900;
 }
 
 // console.log(percentageOfWorld1(59));
@@ -183,11 +183,24 @@ const percentageOfWorld3 = (population) => 7900 / population;
 const describePopulation = function (country, population) {
   return `${country} has ${population} million people, which is about ${percentageOfWorld1(
     population
-    )}% of the world`;
-  };
-  
-  // console.log(describePopulation("South Africa", 1923));
-  
+  )}% of the world`;
+};
+
+// console.log(describePopulation("South Africa", 1923));
+
 /* ************************** 
-  Reviewing Functions
+  Introduction to Arrays
 ************************** */
+
+const populations = [population, finlandPopulation, avgPopulation, 20];
+
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[populations.length - 1]),
+];
+
+console.log(percentages);
