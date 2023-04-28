@@ -218,11 +218,11 @@ neighbours.pop();
 //   : "is not a central European country :D";
 
 if (!neighbours.includes('Germany')) {
-  console.log('Probably not a central European country :D');
+  // console.log('Probably not a central European country :D');
 }
 
-console.log(`you country ${isCentralEuropean}`);
+// console.log(`you country ${isCentralEuropean}`);
 
 neighbours[neighbours.indexOf("Congo")] = "Republic of Congo";
 
-console.log(neighbours);
+// console.log(neighbours);
