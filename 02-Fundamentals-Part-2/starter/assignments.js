@@ -194,7 +194,7 @@ const describePopulation = function (country, population) {
 
 const populations = [population, finlandPopulation, avgPopulation, 20];
 
-console.log(populations.length === 4);
+// console.log(populations.length === 4);
 
 const percentages = [
   percentageOfWorld1(populations[0]),
@@ -203,4 +203,26 @@ const percentages = [
   percentageOfWorld1(populations[populations.length - 1]),
 ];
 
-console.log(percentages);
+// console.log(percentages);
+
+/* ************************** 
+  Basic Array Operations (Methods)
+************************** */
+
+const neighbours = ["Congo", "France", "Egypt"];
+neighbours.push("Utopia");
+neighbours.pop();
+
+// const isCentralEuropean = neighbours.includes("Germany")
+//   ? "is a central European country :D"
+//   : "is not a central European country :D";
+
+if (!neighbours.includes('Germany')) {
+  console.log('Probably not a central European country :D');
+}
+
+console.log(`you country ${isCentralEuropean}`);
+
+neighbours[neighbours.indexOf("Congo")] = "Republic of Congo";
+
+console.log(neighbours);
