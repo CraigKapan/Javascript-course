@@ -217,7 +217,7 @@ neighbours.pop();
 //   ? "is a central European country :D"
 //   : "is not a central European country :D";
 
-if (!neighbours.includes('Germany')) {
+if (!neighbours.includes("Germany")) {
   // console.log('Probably not a central European country :D');
 }
 
@@ -236,5 +236,11 @@ const myCountry = {
   capital: "Cape Town",
   language: "English",
   population: 59,
-  neighbours: ["Congo", "France", "Egypt"]
-}
+  neighbours: ["Congo", "France", "Egypt"],
+};
+
+/* ************************** 
+  Dot vs. Bracket Notation
+************************** */
+
+console.log(`${myCountry.country}, has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
