@@ -231,16 +231,34 @@ neighbours[neighbours.indexOf("Congo")] = "Republic of Congo";
   Introduction to Objects
 ************************** */
 
+// const myCountry = {
+//   country: "South Africa",
+//   capital: "Cape Town",
+//   language: "English",
+//   population: 59,
+//   neighbours: ["Congo", "France", "Egypt"],
+// };
+
+/* ************************** 
+Dot vs. Bracket Notation
+************************** */
+
+// console.log(`${myCountry.country}, has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+/* ************************** 
+Object Methods
+************************** */
+
 const myCountry = {
   country: "South Africa",
   capital: "Cape Town",
   language: "English",
   population: 59,
   neighbours: ["Congo", "France", "Egypt"],
+
+  describe: function () {
+    return `${this.country}, has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+  }
 };
 
-/* ************************** 
-  Dot vs. Bracket Notation
-************************** */
-
-console.log(`${myCountry.country}, has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+console.log(myCountry.describe());
