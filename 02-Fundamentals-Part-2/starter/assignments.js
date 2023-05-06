@@ -226,3 +226,15 @@ if (!neighbours.includes('Germany')) {
 neighbours[neighbours.indexOf("Congo")] = "Republic of Congo";
 
 // console.log(neighbours);
+
+/* ************************** 
+  Introduction to Objects
+************************** */
+
+const myCountry = {
+  country: "South Africa",
+  capital: "Cape Town",
+  language: "English",
+  population: 59,
+  neighbours: ["Congo", "France", "Egypt"]
+}

@@ -215,7 +215,7 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log("You have a friend named Steven");
 }
-*/
+
 ////////////////////////////////////
 // Coding Challenge #2
 const bills = [125, 555, 44];
@@ -230,3 +230,14 @@ console.log(tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+*/
+////////////////////////////////////
+// Introduction to Objects
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Micheal", "Peter", "Steven"],
+};
