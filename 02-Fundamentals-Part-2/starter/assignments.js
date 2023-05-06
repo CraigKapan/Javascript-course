@@ -261,4 +261,4 @@ const myCountry = {
   }
 };
 
-console.log(myCountry.describe());
+// console.log(myCountry.describe());
