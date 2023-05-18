@@ -255,10 +255,18 @@ const myCountry = {
   language: "English",
   population: 59,
   neighbours: ["Congo", "France", "Egypt"],
-
+  
   describe: function () {
     return `${this.country}, has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
   }
 };
 
 // console.log(myCountry.describe());
+
+/* ************************** 
+ Iteration: The for Loop
+************************** */
+
+for(let v = 1; v <= 50; v++) {
+  console.log(`Voter number ${v} is currently voting 🗳`);
+}

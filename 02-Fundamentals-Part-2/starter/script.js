@@ -323,7 +323,7 @@ console.log(jonas.age);
 console.log(jonas.age);
 
 console.log(jonas.getSummary());
-*/
+
 ////////////////////////////////////
 // Coding Challenge #3
 
@@ -331,7 +331,7 @@ const mark = {
   fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
-
+  
   calcBMI: function () {
     this.BMI = this.mass / this.height ** 2;
     return this.BMI;
@@ -354,13 +354,32 @@ if (mark.calcBMI() > john.calcBMI()) {
     `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
       john.fullName
     }'s BMI (${john.calcBMI()}) `
-  );
-} else if (john.calcBMI() > mark.calcBMI()) {
-  console.log(
-    `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
-      mark.fullName
-    }'s BMI (${mark.calcBMI()}) `
-  );
-} else {
-  console.log("something aint right");
+    );
+  } else if (john.calcBMI() > mark.calcBMI()) {
+    console.log(
+      `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+        mark.fullName
+      }'s BMI (${mark.calcBMI()}) `
+      );
+    } else {
+      console.log("something aint right");
+    }
+*/
+////////////////////////////////////
+//  Iteration: The for Loop
+
+// console.log("Lifting weights rep 1 🏋️‍♂️");
+// console.log("Lifting weights rep 2 🏋️‍♂️");
+// console.log("Lifting weights rep 3 🏋️‍♂️");
+// console.log("Lifting weights rep 4 🏋️‍♂️");
+// console.log("Lifting weights rep 5 🏋️‍♂️");
+// console.log("Lifting weights rep 6 🏋️‍♂️");
+// console.log("Lifting weights rep 7 🏋️‍♂️");
+// console.log("Lifting weights rep 8 🏋️‍♂️");
+// console.log("Lifting weights rep 9 🏋️‍♂️");
+// console.log("Lifting weights rep 10 🏋️‍♂️");
+
+// for loop keep running while condition is true
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
 }
