@@ -268,5 +268,18 @@ const myCountry = {
 ************************** */
 
 for(let v = 1; v <= 50; v++) {
-  console.log(`Voter number ${v} is currently voting 🗳`);
+  // console.log(`Voter number ${v} is currently voting 🗳`);
 }
+
+/* ************************** 
+ Looping Arrays, Breaking and Continuing
+************************** */
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(i))
+}
+
+console.log(percentages2);
+console.log(percentages);
