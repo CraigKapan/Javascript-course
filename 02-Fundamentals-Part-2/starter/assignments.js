@@ -294,6 +294,10 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
   // console.log(listOfNeighbours[i]);
 
   for (let n = 0; n < listOfNeighbours[i].length; n++) {
-    console.log(`Neighbours ${listOfNeighbours[i][n]}`);
+    // console.log(`Neighbours ${listOfNeighbours[i][n]}`);
   }
 }
+
+/* ************************** 
+ The while Loop
+************************** */
