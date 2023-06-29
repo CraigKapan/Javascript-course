@@ -272,7 +272,7 @@ for(let v = 1; v <= 50; v++) {
 }
 
 /* ************************** 
- Looping Arrays, Breaking and Continuing
+Looping Arrays, Breaking and Continuing
 ************************** */
 
 const percentages2 = [];
@@ -281,5 +281,19 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(percentageOfWorld1(i))
 }
 
-console.log(percentages2);
-console.log(percentages);
+// console.log(percentages2);
+// console.log(percentages);
+
+/* ************************** 
+ Looping Backwards and Loops in Loops
+************************** */
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', "Russia"]];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  // console.log(listOfNeighbours[i]);
+
+  for (let n = 0; n < listOfNeighbours[i].length; n++) {
+    console.log(`Neighbours ${listOfNeighbours[i][n]}`);
+  }
+}
