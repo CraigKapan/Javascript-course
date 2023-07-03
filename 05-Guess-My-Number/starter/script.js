@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-/////////////////////////////
+///////////////////////////////
 // Selecting and Manipulating Elements
 
 console.log(document.querySelector(".message").innerHTML);
