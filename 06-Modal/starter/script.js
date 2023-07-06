@@ -27,4 +27,4 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
       closeModal();
     }
   });
-}
+};
