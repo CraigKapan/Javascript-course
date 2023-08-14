@@ -31,10 +31,19 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = '20:00',
+    address,
+  }) {
     console.log(
       `Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
 };
 
@@ -85,7 +94,7 @@ console.log(i, j, k);
 
 const [p=1, q=1, r=1] = [8, 9];
 console.log(p, q, r);
-*/
+
 ///////////////////////////////
 // Destructuring Objects
 
@@ -114,3 +123,43 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
+*/
+///////////////////////////////
+// The Spread Operator (...)
+
+const arr = [7, 8, 9];
+const addNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(addNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+
+const mainMenuCopy = [...restaurant.mainMenu];
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+
+const ingredients = [
+  prompt("Let/'s make pasta! Ingredient 1?"),
+  prompt('Ingredient 2?'),
+  prompt('Ingredient 3?'),
+];
+
+console.log(ingredients);
+
+restaurant.orderPasta(...ingredients);
+
+const newRestaurant = {foundedIn: 1998 , ...restaurant, founder: "Craig"}
+
+const restaurantCopy = {...restaurant};
+restaurantCopy.name = "Nsue litten"
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
