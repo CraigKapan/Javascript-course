@@ -167,7 +167,7 @@ const restaurantCopy = {...restaurant};
 restaurantCopy.name = "Nsue litten"
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
-*/
+
 ///////////////////////////////
 // Rest Pattern and Parameters
 
@@ -207,3 +207,30 @@ const x = [23, 5, 7];
 add(...x);
 
 restaurant.orderPizza('mushrooms', 'onions', 'olives', 'spinach');
+*/
+///////////////////////////////
+// Short Circuiting (&& and ||)
+
+// OR
+
+// Use and return any data type, short-circuting
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10
+
+const guest2 = restaurant.numGuests || 10
+
+// And
+
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushrooms", "spinach")
+}
+
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach")
