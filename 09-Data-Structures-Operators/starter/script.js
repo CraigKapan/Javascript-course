@@ -55,7 +55,7 @@ restaurant.orderDelivery({
   time: '22:30',
   address: '3 west ave',
   mainIndex: 2,
-  starterIndex2,
+  starterIndex: 2,
 });
 restaurant.orderDelivery({
   address: '3 west ave',
@@ -244,7 +244,7 @@ console.log(guests);
 
 const guestsCorrect = restaurant.numGuests ?? 10;
 console.log(guestsCorrect);
-*/
+
 ///////////////////////////////
 // Logical Assignment Operators
 
@@ -275,3 +275,101 @@ rest2.owner &&= '<ANONYMOUS>';
 
 console.log(rest1);
 console.log(rest2);
+*/
+///////////////////////////////
+// Coding Challenge #1
+
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+const players1 = [
+  'Neuer',
+  'Pavard',
+  'Martinez',
+  'Alaba',
+  'Davies',
+  'Kimmich',
+  'Goretzka',
+  'Coman',
+  'Muller',
+  'Gnarby',
+  'Lewandowski',
+];
+
+const players2 = [
+  'Burki',
+  'Schulz',
+  'Hummels',
+  'Akanji',
+  'Hakimi',
+  'Weigl',
+  'Witsel',
+  'Hazard',
+  'Brandt',
+  'Sancho',
+  'Gotze',
+];
+
+
+const [gk1, ...fieldPlayers1] = players1;
+const [gk2, ...fieldPlayers2] = players2;
+
+const allplayers = [...players1, ...players2]
+console.log(allplayers);
+
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+
+const {team1, draw, team2} = game.odds;
+
+const printGoals = function (...players) {
+  console.log(players);
+  console.log(`${players.length} goals were scored`);
+};
+
+printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+printGoals('Davies', 'Muller');
+printGoals(...game.scored);
+
+// 7.
+team1 < team2 && console.log('Team 1 is more likely to win');
+team1 > team2 && console.log('Team 2 is more likely to win');
+
+printGoals()
