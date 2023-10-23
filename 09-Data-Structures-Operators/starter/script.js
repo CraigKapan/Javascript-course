@@ -32,12 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({
-    starterIndex = 1,
-    mainIndex = 0,
-    time = '20:00',
-    address,
-  }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
     console.log(
       `Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -385,6 +380,33 @@ for (const item of menu)
 
 for (const [i, el] of menu.entries()) 
  console.log(`${i + 1}: ${el}`);
-*/
+
 ///////////////////////////////
 //  Enhanced Object Literals
+*/
+///////////////////////////////
+//  Optional Chaining (?.)
+if (restaurant.openingHours && restaurant.openingHours.mon)
+  console.log(restaurant.openingHours.mon.open);
+
+console.log(restaurant?.openingHours?.mon?.open);
+
+const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+for (day of days) {
+  console.log(day);
+  restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`on ${day}, we open at ${open}`);
+}
+
+console.log(restaurant.order?.(0, 1) ?? 'Method is no existant');
+console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method is no existant');
+
+const users = [
+  {
+    name: 'Jonas',
+    email: 'hello@jonas.io',
+  },
+];
+
+console.log(users[0]?.name ?? "array empty"]);
