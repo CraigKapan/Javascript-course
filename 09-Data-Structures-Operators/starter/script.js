@@ -383,11 +383,11 @@ for (const [i, el] of menu.entries())
 
 ///////////////////////////////
 //  Enhanced Object Literals
-*/
+
 ///////////////////////////////
 //  Optional Chaining (?.)
 if (restaurant.openingHours && restaurant.openingHours.mon)
-  console.log(restaurant.openingHours.mon.open);
+console.log(restaurant.openingHours.mon.open);
 
 console.log(restaurant?.openingHours?.mon?.open);
 
@@ -409,4 +409,27 @@ const users = [
   },
 ];
 
-console.log(users[0]?.name ?? "array empty"]);
+console.log(users[0]?.name ?? "array empty");
+*/
+///////////////////////////////
+//   Looping Objects: Object Keys, Values, and Entries
+
+// Property names
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+let openStr = `we are open on ${properties.length} days: `;
+
+for (const day of properties) openStr += `${day}, `;
+
+// property values
+
+const values = Object.values(openingHours);
+console.log(values);
+
+// Entire object
+const entries = Object.entries(openingHours);
+
+for(const [day, {open, close}] of entries){
+  console.log(`On ${day} we open at ${open} and close on ${close}`);
+}
